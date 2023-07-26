@@ -2,239 +2,337 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fruit website</title>
-    <!-- Tailwind and Daisy UI cdn  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fruit website</title>
+  <!-- Tailwind and Daisy UI cdn  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Font Lato  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- Google Font Lato  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
-    <!-- Font awesome cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- Custom color code  -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                        'nav-bg': '#F85559',
-                    }
-                }
-            }
+  <!-- Font awesome cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom color code  -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'nav-bg': '#F85559',
+          }
         }
-    </script>
-    <style>
-       svg {
-    margin-left: 21px;
-    width: 29px;
-}
-    </style>
+      }
+    }
+  </script>
+  <style>
+    svg {
+      margin-left: 21px;
+      width: 29px;
+    }
+
+    .star svg {
+      width: 150px;
+      margin-left: 14rem;
+    }
+  </style>
 </head>
 
 <body>
-    <header class="max-w-7xl mx-auto ">
-        <!-- navbar section start  -->
-        <section class="rounded-lg relative">
-            <div class="navbar bg-nav-bg">
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li class="text-white text-[20px]"><a>Home</a></li>
-                        <li class="text-white text-[20px]"><a>About Us</a></li>
-                        <li class="text-white text-[20px]"><a>Shop</a></li>
-                        <li class="text-white text-[20px]"><a>All Fruits</a></li>
-                    </ul>
-                </div>
+  <header class="max-w-7xl mx-auto ">
+    <!-- navbar section start  -->
+    <section class="rounded-lg relative">
+      <div class="navbar bg-nav-bg">
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-white text-[20px]"><a>Home</a></li>
+            <li class="text-white text-[20px]"><a>About Us</a></li>
+            <li class="text-white text-[20px]"><a>Shop</a></li>
+            <li class="text-white text-[20px]"><a>All Fruits</a></li>
+          </ul>
+        </div>
 
-                    <div class="navbar-start lg:hidden">
-                      <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost btn-circle">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-                        </label>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Home</a></li>
-                            <li><a>About Us</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>All Fruits</a></li>
-                        </ul>
-                      </div>
-                    </div>
+        <div class="navbar-start lg:hidden">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
 
-                <div class="navbar-end">
-                    <img src="./images/logo.png" alt="logo">
-                    <a class="btn btn-ghost normal-case text-white text-4xl">Fruit Burst</a>
+        <div class="navbar-end">
+          <img src="./images/logo.png" alt="logo">
+          <a class="btn btn-ghost normal-case text-white text-4xl">Fruit Burst</a>
 
-                </div>
-                <div class="navbar-end">
-                    <!-- <div class="flex">
+        </div>
+        <div class="navbar-end">
+          <!-- <div class="flex">
                         <a class="btn bg-white rounded-none border pr-44 rounded-l-full">Search here </a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-[48px] bg-white rounded-r-full pr-2 border-none mr-1">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                       </svg>
                     </div> -->
-                    <div class="bg-white flex sm:flex-row px-1 py-0 lg:px-6 lg:py-1 rounded-full absolute hidden md:block lg:block">
-                      <input type="search" placeholder="Search here" class="text-xs">
-                    <i class="fa-solid fa-magnifying-glass pt-1 pr-1 lg:pr-0 text-gray-500"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <div
+            class="bg-white flex sm:flex-row px-1 py-0 lg:px-6 lg:py-1 rounded-full absolute hidden md:block lg:block">
+            <input type="search" placeholder="Search here" class="text-xs">
+            <i class="fa-solid fa-magnifying-glass pt-1 pr-1 lg:pr-0 text-gray-500"></i>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Slider section start  -->
-        <section class="relative">
-          <div class="w-[350px] md:w-full mx-auto rounded-lg">
-            <div class="carousel w-full ">
-              <!-- first slider  -->
-              <div id="slide1" class="carousel-item relative w-full  md:w-full">
-                <img src="./images/banner1.png" class=" w-full h-56 md:h-auto   brightness-50 rounded-lg" />
-                <!-- <div class="absolute top-11 left-[7%] :left-[24%] text-center text-white">
+    <!-- Slider section start  -->
+    <section class="relative">
+      <div class="w-[350px] md:w-full mx-auto rounded-lg">
+        <div class="carousel w-full ">
+          <!-- first slider  -->
+          <div id="slide1" class="carousel-item relative w-full  md:w-full">
+            <img src="./images/banner1.png" class=" w-full h-56 md:h-auto   brightness-50 rounded-lg" />
+            <!-- <div class="absolute top-11 left-[7%] :left-[24%] text-center text-white">
                   <h3 class="text-2xl lg:text-7xl text-white font-bold">Exotic tastes at your <br> doorstep</h3>
                   <p class="py-3 text-sm lg:text-2xl">We supply highly quality organic products</p>
                   <button class="btn btn-error">Shop Now</button>
                 </div> -->
-                <div class="hero-content text-center absolute top-1 md:top-11 left-[7%] md:left-[12%] lg:left-[26%] ">
-                  
-                  <div class="max-w-md md:pt-24">
-                    <h1 class="text-3xl lg:text-5xl text-white font-bold md:w-[600px]">Exotic tastes at your <br> doorstep</h1>
-                    <p class=" md:py-6 text-white py-2 md:w-[600px]">We supply highly quality organic products</p>
-                    <button class="btn btn-primary md:ml-36">Get Started</button>
-                  </div>
-                </div>
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide4" class="btn btn-circle">❮</a> 
-                  <a href="#slide2" class="btn btn-circle">❯</a>
-                </div>
-              </div> 
-              <!-- second slider  -->
-              <div id="slide2" class="carousel-item relative w-full  md:w-full">
-                <img src="./images/banner2.png" class=" w-full h-56 md:h-auto brightness-50 rounded-lg" />
-                <div class="hero-content text-center absolute top-1 md:top-11 left-[7%] md:left-[12%] lg:left-[28%] ">
-                  <div class="max-w-md md:pt-24">
-                    <h1 class="text-3xl lg:text-5xl text-white font-bold md:w-[600px]">Exotic tastes at your <br> doorstep</h1>
-                    <p class=" md:py-6 text-white py-2 md:w-[600px]">We supply highly quality organic products</p>
-                    <button class="btn btn-primary md:ml-36">Get Started</button>
-                  </div>
-                </div>
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide1" class="btn btn-circle">❮</a> 
-                  <a href="#slide3" class="btn btn-circle">❯</a>
-                </div>
-              </div> 
-              <!-- third slider  -->
-              <div id="slide3" class="carousel-item relative w-full  md:w-full">
-                <img src="./images/banner3.png" class=" w-full h-56 md:h-auto brightness-50 rounded-lg" />
-                <div class="hero-content text-center absolute top-1 md:top-11 left-[7%] md:left-[12%] lg:left-[28%] ">
-                  <div class="max-w-md md:pt-24">
-                    <h1 class="text-3xl lg:text-5xl text-white font-bold md:w-[600px]">Exotic tastes at your <br> doorstep</h1>
-                    <p class=" md:py-6 text-white py-2 md:w-[600px]">We supply highly quality organic products</p>
-                    <button class="btn btn-primary md:ml-36">Get Started</button>
-                  </div>
-                </div>
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide2" class="btn btn-circle">❮</a> 
-                  <a href="#slide4" class="btn btn-circle">❯</a>
-                </div>
-              </div> 
-              <!-- fourth slider  -->
-              <div id="slide4" class="carousel-item relative w-full  md:w-full">
-                <img src="./images/banner4.png" class=" w-full h-56 md:h-auto brightness-50 rounded-lg" />
-                <div class="hero-content text-center absolute top-1 md:top-11 left-[7%] md:left-[12%] lg:left-[28%] ">
-                  <div class="max-w-md md:pt-24">
-                    <h1 class="text-3xl lg:text-5xl text-white font-bold md:w-[600px]">Exotic tastes at your <br> doorstep</h1>
-                    <p class=" md:py-6 text-white py-2 md:w-[600px]">We supply highly quality organic products</p>
-                    <button class="btn btn-primary md:ml-36">Get Started</button>
-                  </div>
-                </div>
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                  <a href="#slide3" class="btn btn-circle">❮</a> 
-                  <a href="#slide1" class="btn btn-circle">❯</a>
-                </div>
-              </div> 
-             </div>
-            </div>
-              <!-- Fruit section  -->
-            <div class="hidden lg:block max-w-5xl mx-auto  bg-white drop-shadow-lg py-8 absolute top-[80%] left-32 px-10">
-              <div class=" flex justify-evenly gap-20">
-                <div>
-                  <img src="./images/fruit1.png" alt="">
-                  <p>Strawberry</p>
-                </div>
-                <div>
-                  <img src="./images/fruit2.png" alt="">
-                  <p>Orange</p>
-                </div>
-                <div>
-                  <img src="./images/fruit3.png" alt="">
-                  <p>Mango</p>
-                </div>
-                <div>
-                  <img src="./images/fruit4.png" alt="">
-                  <p>Strawberry</p>
-                </div>
-                <div>
-                  <img src="./images/fruit5.png" alt="">
-                  <p>Pomegranate</p>
-                </div>
+            <div class="hero-content text-center absolute top-1 md:top-11 left-[7%] md:left-[12%] lg:left-[26%] ">
+
+              <div class="max-w-md md:pt-24">
+                <h1 class="text-3xl lg:text-5xl text-white font-bold md:w-[600px]">Exotic tastes at your <br> doorstep
+                </h1>
+                <p class=" md:py-6 text-white py-2 md:w-[600px]">We supply highly quality organic products</p>
+                <button class="btn btn-primary md:ml-36">Get Started</button>
               </div>
             </div>
-        </section>
-    </header>
-    <main class=" mt-9 lg:mt-36 max-w-7xl mx-auto ">
-      <!-- Deal of the day -->
-      <section class="text-center md:text-start">
-        <div class="flex justify-between flex-col md:flex-row p-5">
-          <div class="">
-            <h3 class="font-bold text-5xl">Deal of the day</h3>
-            <p class=" lg:w-[37rem] py-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
           </div>
-          <!-- countdown  -->
-          <div class="ml-3 md:ml-0">
-            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-              <div class="flex flex-col">
-                <span class="countdown font-bold  pb-3 text-3xl mdtext-5xl">
-                  <span style="--value:29 ;"></span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 16 15" fill="none">
-                    <path d="M8.15198 4.30006C8.03268 4.30006 7.91826 4.25267 7.8339 4.16831C7.74954 4.08395 7.70215 3.96953 7.70215 3.85023C7.70215 3.73092 7.74954 3.6165 7.8339 3.53214C7.91826 3.44778 8.03268 3.40039 8.15198 3.40039C8.27129 3.40039 8.38571 3.44778 8.47007 3.53214C8.55443 3.6165 8.60182 3.73092 8.60182 3.85023C8.60182 3.96953 8.55443 4.08395 8.47007 4.16831C8.38571 4.25267 8.27129 4.30006 8.15198 4.30006ZM8.15198 7.89875C8.03268 7.89875 7.91826 7.85135 7.8339 7.76699C7.74954 7.68263 7.70215 7.56821 7.70215 7.44891C7.70215 7.32961 7.74954 7.21519 7.8339 7.13083C7.91826 7.04647 8.03268 6.99908 8.15198 6.99908C8.27129 6.99908 8.38571 7.04647 8.47007 7.13083C8.55443 7.21519 8.60182 7.32961 8.60182 7.44891C8.60182 7.56821 8.55443 7.68263 8.47007 7.76699C8.38571 7.85135 8.27129 7.89875 8.15198 7.89875ZM8.15198 11.4974C8.03268 11.4974 7.91826 11.45 7.8339 11.3657C7.74954 11.2813 7.70215 11.1669 7.70215 11.0476C7.70215 10.9283 7.74954 10.8139 7.8339 10.7295C7.91826 10.6452 8.03268 10.5978 8.15198 10.5978C8.27129 10.5978 8.38571 10.6452 8.47007 10.7295C8.55443 10.8139 8.60182 10.9283 8.60182 11.0476C8.60182 11.1669 8.55443 11.2813 8.47007 11.3657C8.38571 11.45 8.27129 11.4974 8.15198 11.4974Z" stroke="#121212" stroke-width="0.899671" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </span>
-                <p class="mr-12">days</p>
-              </div> 
-              <div class="flex flex-col">
-                <span class="countdown font-bold pb-3 text-3xl mdtext-5xl">
-                  <span style="--value:10;"></span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 16 15" fill="none">
-                    <path d="M8.15198 4.30006C8.03268 4.30006 7.91826 4.25267 7.8339 4.16831C7.74954 4.08395 7.70215 3.96953 7.70215 3.85023C7.70215 3.73092 7.74954 3.6165 7.8339 3.53214C7.91826 3.44778 8.03268 3.40039 8.15198 3.40039C8.27129 3.40039 8.38571 3.44778 8.47007 3.53214C8.55443 3.6165 8.60182 3.73092 8.60182 3.85023C8.60182 3.96953 8.55443 4.08395 8.47007 4.16831C8.38571 4.25267 8.27129 4.30006 8.15198 4.30006ZM8.15198 7.89875C8.03268 7.89875 7.91826 7.85135 7.8339 7.76699C7.74954 7.68263 7.70215 7.56821 7.70215 7.44891C7.70215 7.32961 7.74954 7.21519 7.8339 7.13083C7.91826 7.04647 8.03268 6.99908 8.15198 6.99908C8.27129 6.99908 8.38571 7.04647 8.47007 7.13083C8.55443 7.21519 8.60182 7.32961 8.60182 7.44891C8.60182 7.56821 8.55443 7.68263 8.47007 7.76699C8.38571 7.85135 8.27129 7.89875 8.15198 7.89875ZM8.15198 11.4974C8.03268 11.4974 7.91826 11.45 7.8339 11.3657C7.74954 11.2813 7.70215 11.1669 7.70215 11.0476C7.70215 10.9283 7.74954 10.8139 7.8339 10.7295C7.91826 10.6452 8.03268 10.5978 8.15198 10.5978C8.27129 10.5978 8.38571 10.6452 8.47007 10.7295C8.55443 10.8139 8.60182 10.9283 8.60182 11.0476C8.60182 11.1669 8.55443 11.2813 8.47007 11.3657C8.38571 11.45 8.27129 11.4974 8.15198 11.4974Z" stroke="#121212" stroke-width="0.899671" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </span>
-                <p class="mr-12">hours</p>
-              </div> 
-              <div class="flex flex-col">
-                <span class="countdown font-bold pb-3 text-3xl mdtext-5xl">
-                  <span style="--value:24;"></span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 16 15" fill="none">
-                    <path d="M8.15198 4.30006C8.03268 4.30006 7.91826 4.25267 7.8339 4.16831C7.74954 4.08395 7.70215 3.96953 7.70215 3.85023C7.70215 3.73092 7.74954 3.6165 7.8339 3.53214C7.91826 3.44778 8.03268 3.40039 8.15198 3.40039C8.27129 3.40039 8.38571 3.44778 8.47007 3.53214C8.55443 3.6165 8.60182 3.73092 8.60182 3.85023C8.60182 3.96953 8.55443 4.08395 8.47007 4.16831C8.38571 4.25267 8.27129 4.30006 8.15198 4.30006ZM8.15198 7.89875C8.03268 7.89875 7.91826 7.85135 7.8339 7.76699C7.74954 7.68263 7.70215 7.56821 7.70215 7.44891C7.70215 7.32961 7.74954 7.21519 7.8339 7.13083C7.91826 7.04647 8.03268 6.99908 8.15198 6.99908C8.27129 6.99908 8.38571 7.04647 8.47007 7.13083C8.55443 7.21519 8.60182 7.32961 8.60182 7.44891C8.60182 7.56821 8.55443 7.68263 8.47007 7.76699C8.38571 7.85135 8.27129 7.89875 8.15198 7.89875ZM8.15198 11.4974C8.03268 11.4974 7.91826 11.45 7.8339 11.3657C7.74954 11.2813 7.70215 11.1669 7.70215 11.0476C7.70215 10.9283 7.74954 10.8139 7.8339 10.7295C7.91826 10.6452 8.03268 10.5978 8.15198 10.5978C8.27129 10.5978 8.38571 10.6452 8.47007 10.7295C8.55443 10.8139 8.60182 10.9283 8.60182 11.0476C8.60182 11.1669 8.55443 11.2813 8.47007 11.3657C8.38571 11.45 8.27129 11.4974 8.15198 11.4974Z" stroke="#121212" stroke-width="0.899671" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </span>
-                <p class="mr-12">Min</p>
-              </div> 
-              <div class="flex flex-col">
-                <span class="countdown font-bold pb-3 text-3xl mdtext-5xl">
-                  <span style="--value:37;"></span>
-                </span>
-                <p>Sec</p>
+          <!-- second slider  -->
+          <div id="slide2" class="carousel-item relative w-full  md:w-full">
+            <img src="./images/banner2.png" class=" w-full h-56 md:h-auto brightness-50 rounded-lg" />
+            <div class="hero-content text-center absolute top-1 md:top-11 left-[7%] md:left-[12%] lg:left-[28%] ">
+              <div class="max-w-md md:pt-24">
+                <h1 class="text-3xl lg:text-5xl text-white font-bold md:w-[600px]">Exotic tastes at your <br> doorstep
+                </h1>
+                <p class=" md:py-6 text-white py-2 md:w-[600px]">We supply highly quality organic products</p>
+                <button class="btn btn-primary md:ml-36">Get Started</button>
               </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- third slider  -->
+          <div id="slide3" class="carousel-item relative w-full  md:w-full">
+            <img src="./images/banner3.png" class=" w-full h-56 md:h-auto brightness-50 rounded-lg" />
+            <div class="hero-content text-center absolute top-1 md:top-11 left-[7%] md:left-[12%] lg:left-[28%] ">
+              <div class="max-w-md md:pt-24">
+                <h1 class="text-3xl lg:text-5xl text-white font-bold md:w-[600px]">Exotic tastes at your <br> doorstep
+                </h1>
+                <p class=" md:py-6 text-white py-2 md:w-[600px]">We supply highly quality organic products</p>
+                <button class="btn btn-primary md:ml-36">Get Started</button>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- fourth slider  -->
+          <div id="slide4" class="carousel-item relative w-full  md:w-full">
+            <img src="./images/banner4.png" class=" w-full h-56 md:h-auto brightness-50 rounded-lg" />
+            <div class="hero-content text-center absolute top-1 md:top-11 left-[7%] md:left-[12%] lg:left-[28%] ">
+              <div class="max-w-md md:pt-24">
+                <h1 class="text-3xl lg:text-5xl text-white font-bold md:w-[600px]">Exotic tastes at your <br> doorstep
+                </h1>
+                <p class=" md:py-6 text-white py-2 md:w-[600px]">We supply highly quality organic products</p>
+                <button class="btn btn-primary md:ml-36">Get Started</button>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer></footer>
+      </div>
+      <!-- Fruit section  -->
+      <div class="hidden lg:block max-w-5xl mx-auto  bg-white drop-shadow-lg py-8 absolute top-[80%] left-32 px-10">
+        <div class=" flex justify-evenly gap-20">
+          <div>
+            <img src="./images/fruit1.png" alt="">
+            <p>Strawberry</p>
+          </div>
+          <div>
+            <img src="./images/fruit2.png" alt="">
+            <p>Orange</p>
+          </div>
+          <div>
+            <img src="./images/fruit3.png" alt="">
+            <p>Mango</p>
+          </div>
+          <div>
+            <img src="./images/fruit4.png" alt="">
+            <p>Strawberry</p>
+          </div>
+          <div>
+            <img src="./images/fruit5.png" alt="">
+            <p>Pomegranate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main class=" mt-9 lg:mt-36 max-w-7xl mx-auto ">
+    <!-- Deal of the day -->
+    <section class="text-center md:text-start">
+      <div class="flex justify-between flex-col md:flex-row p-5">
+        <div class="">
+          <h3 class="font-bold text-5xl">Deal of the day</h3>
+          <p class=" lg:w-[37rem] py-5">Contrary to popular belief, is not simply random text. It has roots in a piece
+            of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <!-- countdown  -->
+        <div class="ml-3 md:ml-0">
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-bold  pb-3 text-3xl md:text-5xl">
+                <span style="--value:29 ;"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 16 15" fill="none">
+                  <path
+                    d="M8.15198 4.30006C8.03268 4.30006 7.91826 4.25267 7.8339 4.16831C7.74954 4.08395 7.70215 3.96953 7.70215 3.85023C7.70215 3.73092 7.74954 3.6165 7.8339 3.53214C7.91826 3.44778 8.03268 3.40039 8.15198 3.40039C8.27129 3.40039 8.38571 3.44778 8.47007 3.53214C8.55443 3.6165 8.60182 3.73092 8.60182 3.85023C8.60182 3.96953 8.55443 4.08395 8.47007 4.16831C8.38571 4.25267 8.27129 4.30006 8.15198 4.30006ZM8.15198 7.89875C8.03268 7.89875 7.91826 7.85135 7.8339 7.76699C7.74954 7.68263 7.70215 7.56821 7.70215 7.44891C7.70215 7.32961 7.74954 7.21519 7.8339 7.13083C7.91826 7.04647 8.03268 6.99908 8.15198 6.99908C8.27129 6.99908 8.38571 7.04647 8.47007 7.13083C8.55443 7.21519 8.60182 7.32961 8.60182 7.44891C8.60182 7.56821 8.55443 7.68263 8.47007 7.76699C8.38571 7.85135 8.27129 7.89875 8.15198 7.89875ZM8.15198 11.4974C8.03268 11.4974 7.91826 11.45 7.8339 11.3657C7.74954 11.2813 7.70215 11.1669 7.70215 11.0476C7.70215 10.9283 7.74954 10.8139 7.8339 10.7295C7.91826 10.6452 8.03268 10.5978 8.15198 10.5978C8.27129 10.5978 8.38571 10.6452 8.47007 10.7295C8.55443 10.8139 8.60182 10.9283 8.60182 11.0476C8.60182 11.1669 8.55443 11.2813 8.47007 11.3657C8.38571 11.45 8.27129 11.4974 8.15198 11.4974Z"
+                    stroke="#121212" stroke-width="0.899671" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <p class="mr-12">days</p>
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-bold pb-3 text-3xl md:text-5xl">
+                <span style="--value:10;"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 16 15" fill="none">
+                  <path
+                    d="M8.15198 4.30006C8.03268 4.30006 7.91826 4.25267 7.8339 4.16831C7.74954 4.08395 7.70215 3.96953 7.70215 3.85023C7.70215 3.73092 7.74954 3.6165 7.8339 3.53214C7.91826 3.44778 8.03268 3.40039 8.15198 3.40039C8.27129 3.40039 8.38571 3.44778 8.47007 3.53214C8.55443 3.6165 8.60182 3.73092 8.60182 3.85023C8.60182 3.96953 8.55443 4.08395 8.47007 4.16831C8.38571 4.25267 8.27129 4.30006 8.15198 4.30006ZM8.15198 7.89875C8.03268 7.89875 7.91826 7.85135 7.8339 7.76699C7.74954 7.68263 7.70215 7.56821 7.70215 7.44891C7.70215 7.32961 7.74954 7.21519 7.8339 7.13083C7.91826 7.04647 8.03268 6.99908 8.15198 6.99908C8.27129 6.99908 8.38571 7.04647 8.47007 7.13083C8.55443 7.21519 8.60182 7.32961 8.60182 7.44891C8.60182 7.56821 8.55443 7.68263 8.47007 7.76699C8.38571 7.85135 8.27129 7.89875 8.15198 7.89875ZM8.15198 11.4974C8.03268 11.4974 7.91826 11.45 7.8339 11.3657C7.74954 11.2813 7.70215 11.1669 7.70215 11.0476C7.70215 10.9283 7.74954 10.8139 7.8339 10.7295C7.91826 10.6452 8.03268 10.5978 8.15198 10.5978C8.27129 10.5978 8.38571 10.6452 8.47007 10.7295C8.55443 10.8139 8.60182 10.9283 8.60182 11.0476C8.60182 11.1669 8.55443 11.2813 8.47007 11.3657C8.38571 11.45 8.27129 11.4974 8.15198 11.4974Z"
+                    stroke="#121212" stroke-width="0.899671" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <p class="mr-12">hours</p>
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-bold pb-3 text-3xl md:text-5xl">
+                <span style="--value:24;"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 16 15" fill="none">
+                  <path
+                    d="M8.15198 4.30006C8.03268 4.30006 7.91826 4.25267 7.8339 4.16831C7.74954 4.08395 7.70215 3.96953 7.70215 3.85023C7.70215 3.73092 7.74954 3.6165 7.8339 3.53214C7.91826 3.44778 8.03268 3.40039 8.15198 3.40039C8.27129 3.40039 8.38571 3.44778 8.47007 3.53214C8.55443 3.6165 8.60182 3.73092 8.60182 3.85023C8.60182 3.96953 8.55443 4.08395 8.47007 4.16831C8.38571 4.25267 8.27129 4.30006 8.15198 4.30006ZM8.15198 7.89875C8.03268 7.89875 7.91826 7.85135 7.8339 7.76699C7.74954 7.68263 7.70215 7.56821 7.70215 7.44891C7.70215 7.32961 7.74954 7.21519 7.8339 7.13083C7.91826 7.04647 8.03268 6.99908 8.15198 6.99908C8.27129 6.99908 8.38571 7.04647 8.47007 7.13083C8.55443 7.21519 8.60182 7.32961 8.60182 7.44891C8.60182 7.56821 8.55443 7.68263 8.47007 7.76699C8.38571 7.85135 8.27129 7.89875 8.15198 7.89875ZM8.15198 11.4974C8.03268 11.4974 7.91826 11.45 7.8339 11.3657C7.74954 11.2813 7.70215 11.1669 7.70215 11.0476C7.70215 10.9283 7.74954 10.8139 7.8339 10.7295C7.91826 10.6452 8.03268 10.5978 8.15198 10.5978C8.27129 10.5978 8.38571 10.6452 8.47007 10.7295C8.55443 10.8139 8.60182 10.9283 8.60182 11.0476C8.60182 11.1669 8.55443 11.2813 8.47007 11.3657C8.38571 11.45 8.27129 11.4974 8.15198 11.4974Z"
+                    stroke="#121212" stroke-width="0.899671" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <p class="mr-12">Min</p>
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-bold pb-3 text-3xl md:text-5xl">
+                <span style="--value:37;"></span>
+              </span>
+              <p>Sec</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- card section start  -->
+    <section>
+      <div>
+        <!-- first card  -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="./images/fruit6.png" alt="Fruit" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <p>Apples</p>
+            <div class="star">
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                <path
+                  d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                  fill="#F85559" />
+                <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                  fill="#FBC0A8" />
+                <path
+                  d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                  fill="#F85559" />
+                <path
+                  d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                  fill="#FBC0A8" />
+                <path
+                  d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                  fill="#FBC0A8" />
+                <path
+                  d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                  fill="#FBC0A8" />
+              </svg>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+           <div class="popup">
+            <button class="btn" onclick="my_modal_2.showModal()">open modal</button>
+            <dialog id="my_modal_2" class="modal">
+              <form method="dialog" class=" modal-box w-max max-w-5xl h-auto">
+                <img src="./images/fruit6.png" class="ml-[15rem] pb-5" alt="">
+                <h3 class="font-bold text-lg text-center">Apple</h3>
+                <p class="py-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits</p>
+               <div class="star">
+                <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                  <path
+                    d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                    fill="#F85559" />
+                  <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                    fill="#FBC0A8" />
+                  <path
+                    d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                    fill="#F85559" />
+                  <path
+                    d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                    fill="#FBC0A8" />
+                  <path
+                    d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                    fill="#FBC0A8" />
+                  <path
+                    d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                    fill="#FBC0A8" />
+                </svg>
+               </div>
+                <div class="py-5">
+                  <button class="btn btn-outline btn-accent">More Fruits</button>
+                  <button class="btn btn-error">Buy Now</button>
+                </div>
+              </form>
+              <form method="dialog" class="modal-backdrop">
+              
+              </form>
+            </dialog>
+           </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
 </body>
 
 </html>
