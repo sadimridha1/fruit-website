@@ -33,19 +33,24 @@
     }
   </script>
   <style>
-    svg {
-      margin-left: 21px;
-      width: 29px;
+    .popup-star svg {
+      /* margin-left: 21px; */
+      /* width: 29px; */
+      margin-left: 208px
+    }
+
+    .lato-font{
+      font-family: 'Lato', sans-serif;
     }
 
     .star svg {
       width: 150px;
-      margin-left: 14rem;
+      /* margin-left: 14rem; */
     }
   </style>
 </head>
 
-<body>
+<body class="lato-font">
   <header class="max-w-7xl mx-auto ">
     <!-- navbar section start  -->
     <section class="rounded-lg relative">
@@ -257,10 +262,10 @@
     </section>
 
     <!-- card section start  -->
-    <section>
-      <div>
+    <section class="my-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         <!-- first card  -->
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card border border-gray-300">
           <figure class="px-10 pt-10">
             <img src="./images/fruit6.png" alt="Fruit" class="rounded-xl" />
           </figure>
@@ -290,13 +295,13 @@
             </div>
             <!-- Open the modal using ID.showModal() method -->
            <div class="popup">
-            <button class="btn" onclick="my_modal_2.showModal()">open modal</button>
+            <button class="btn bg-white border-none text-o" onclick="my_modal_2.showModal()">Details</button>
             <dialog id="my_modal_2" class="modal">
-              <form method="dialog" class=" modal-box w-max max-w-5xl h-auto">
-                <img src="./images/fruit6.png" class="ml-[15rem] pb-5" alt="">
+              <form method="dialog" class=" modal-box w-max max-w-[400px] md:max-w-5xl h-auto">
+                <img src="./images/fruit6.png" class=" ml-[8rem] md:ml-[9rem] pb-5" alt="">
                 <h3 class="font-bold text-lg text-center">Apple</h3>
-                <p class="py-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits</p>
-               <div class="star">
+                <p class="py-4 sm:w-96 ">Professional employees are there for you to pick the most amazing and fresh fruits</p>
+               <div class="ml-24 md:ml-28">
                 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
                   <path
                     d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
@@ -318,7 +323,7 @@
                 </svg>
                </div>
                 <div class="py-5">
-                  <button class="btn btn-outline btn-accent">More Fruits</button>
+                  <button class="btn btn-outline btn-accent">Close</button>
                   <button class="btn btn-error">Buy Now</button>
                 </div>
               </form>
@@ -329,8 +334,223 @@
            </div>
           </div>
         </div>
+        <!-- second card  -->
+        <div class="card border border-gray-300">
+          <figure class="px-10 pt-10">
+            <img src="./images/fruit7.png" alt="Fruit" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <p>Apples</p>
+            <div class="star">
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                <path
+                  d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                  fill="#F85559" />
+                <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                  fill="#FBC0A8" />
+                <path
+                  d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                  fill="#F85559" />
+                <path
+                  d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                  fill="#FBC0A8" />
+                <path
+                  d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                  fill="#FBC0A8" />
+                <path
+                  d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                  fill="#FBC0A8" />
+              </svg>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+           <div class="popup">
+            <button class="btn bg-white border-none text-o" onclick="my_modal_3.showModal()">Details</button>
+            <dialog id="my_modal_3" class="modal">
+              <form method="dialog" class=" modal-box w-max max-w-[400px] md:max-w-5xl h-auto">
+                <img src="./images/fruit7.png" class=" ml-[8rem] md:ml-[9rem] pb-5" alt="">
+                <h3 class="font-bold text-lg text-center">Apple</h3>
+                <p class="py-4 sm:w-96 ">Professional employees are there for you to pick the most amazing and fresh fruits</p>
+               <div class="ml-24 md:ml-28">
+                <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                  <path
+                    d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                    fill="#F85559" />
+                  <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                    fill="#FBC0A8" />
+                  <path
+                    d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                    fill="#F85559" />
+                  <path
+                    d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                    fill="#FBC0A8" />
+                  <path
+                    d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                    fill="#FBC0A8" />
+                  <path
+                    d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                    fill="#FBC0A8" />
+                </svg>
+               </div>
+                <div class="py-5">
+                  <button class="btn btn-outline btn-accent">Close</button>
+                  <button class="btn btn-error">Buy Now</button>
+                </div>
+              </form>
+              <form method="dialog" class="modal-backdrop">
+              
+              </form>
+            </dialog>
+           </div>
+          </div>
+        </div>
+        <!-- third card  -->
+        <div class="card border border-gray-300">
+          <figure class="px-10 pt-10">
+            <img src="./images/fruit8.png" alt="Fruit" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <p>Apples</p>
+            <div class="star">
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                <path
+                  d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                  fill="#F85559" />
+                <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                  fill="#FBC0A8" />
+                <path
+                  d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                  fill="#F85559" />
+                <path
+                  d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                  fill="#FBC0A8" />
+                <path
+                  d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                  fill="#FBC0A8" />
+                <path
+                  d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                  fill="#FBC0A8" />
+              </svg>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+           <div class="popup">
+            <button class="btn bg-white border-none text-o" onclick="my_modal_4.showModal()">Details</button>
+            <dialog id="my_modal_4" class="modal">
+              <form method="dialog" class=" modal-box w-max max-w-[400px] md:max-w-5xl h-auto">
+                <img src="./images/fruit8.png" class=" ml-[8rem] md:ml-[9rem] pb-5" alt="">
+                <h3 class="font-bold text-lg text-center">Apple</h3>
+                <p class="py-4 sm:w-96 ">Professional employees are there for you to pick the most amazing and fresh fruits</p>
+               <div class="ml-24 md:ml-28">
+                <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                  <path
+                    d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                    fill="#F85559" />
+                  <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                    fill="#FBC0A8" />
+                  <path
+                    d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                    fill="#F85559" />
+                  <path
+                    d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                    fill="#FBC0A8" />
+                  <path
+                    d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                    fill="#FBC0A8" />
+                  <path
+                    d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                    fill="#FBC0A8" />
+                </svg>
+               </div>
+                <div class="py-5">
+                  <button class="btn btn-outline btn-accent">Close</button>
+                  <button class="btn btn-error">Buy Now</button>
+                </div>
+              </form>
+              <form method="dialog" class="modal-backdrop">
+              
+              </form>
+            </dialog>
+           </div>
+          </div>
+        </div>
+        <!-- fourth card  -->
+        <div class="card border border-gray-300">
+          <figure class="px-10 pt-10">
+            <img src="./images/fruit9.png" alt="Fruit" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <p>Apples</p>
+            <div class="star">
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                <path
+                  d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                  fill="#F85559" />
+                <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                  fill="#FBC0A8" />
+                <path
+                  d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                  fill="#F85559" />
+                <path
+                  d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                  fill="#FBC0A8" />
+                <path
+                  d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                  fill="#FBC0A8" />
+                <path
+                  d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                  fill="#FBC0A8" />
+              </svg>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+           <div class="popup">
+            <button class="btn bg-white border-none text-o" onclick="my_modal_5.showModal()">Details</button>
+            <dialog id="my_modal_5" class="modal">
+              <form method="dialog" class=" modal-box w-max max-w-[400px] md:max-w-5xl h-auto">
+                <img src="./images/fruit9.png" class=" ml-[8rem] md:ml-[9rem] pb-5" alt="">
+                <h3 class="font-bold text-lg text-center">Apple</h3>
+                <p class="py-4 sm:w-96 ">Professional employees are there for you to pick the most amazing and fresh fruits</p>
+               <div class="ml-24 md:ml-28">
+                <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                  <path
+                    d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                    fill="#F85559" />
+                  <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                    fill="#FBC0A8" />
+                  <path
+                    d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                    fill="#F85559" />
+                  <path
+                    d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                    fill="#FBC0A8" />
+                  <path
+                    d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                    fill="#FBC0A8" />
+                  <path
+                    d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                    fill="#FBC0A8" />
+                </svg>
+               </div>
+                <div class="py-5">
+                  <button class="btn btn-outline btn-accent">Close</button>
+                  <button class="btn btn-error">Buy Now</button>
+                </div>
+              </form>
+              <form method="dialog" class="modal-backdrop">
+              
+              </form>
+            </dialog>
+           </div>
+          </div>
+        </div>
+        
       </div>
     </section>
+    <!-- button below the card -->
+    <div class="flex justify-center my-16">
+      <button class="btn btn-error text-white">Shop All</button>
+    </div>
   </main>
   <footer></footer>
 </body>
