@@ -55,8 +55,8 @@
 <body class="lato-font">
   <header class="max-w-7xl mx-auto ">
     <!-- navbar section start  -->
-    <section class="rounded-lg relative">
-      <div class="navbar bg-nav-bg rounded-[37px] my-7">
+    <section class="rounded-lg relative hidden md:block lg:block">
+      <div class="navbar bg-nav-bg rounded-[37px] my-7 px-7">
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li class="text-white text-[20px]"><a>Home</a></li>
@@ -89,12 +89,6 @@
 
         </div>
         <div class="navbar-end">
-          <!-- <div class="flex">
-                        <a class="btn bg-white rounded-none border pr-44 rounded-l-full">Search here </a>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-[48px] bg-white rounded-r-full pr-2 border-none mr-1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                      </svg>
-                    </div> -->
           <div
             class="bg-white flex sm:flex-row px-1 py-0 lg:px-6 lg:py-1 rounded-full absolute hidden md:block lg:block">
             <input type="search" placeholder="Search here" class="text-xs">
@@ -104,7 +98,40 @@
       </div>
     </section>
 
-    <!-- Slider section start  -->
+    <!-- mobile navbar start -->
+
+    <section class="block md:hidden lg:hidden">
+      <div class="navbar bg-base-100 w-[90%] mx-auto ">
+        <div class="navbar-start">
+          <img src="./images/logo.png" class="w-9" alt="">
+          <h3 class="text-[25px] font-extrabold ml-2">Fruit Burst</h3>
+        </div>
+  
+        <div class="navbar-end">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-36 -ml-28">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+            <!-- <div
+              class="bg-white flex sm:flex-row px-1 py-0 lg:px-6 lg:py-1 rounded-full absolute hidden md:block lg:block">
+              <input type="search" placeholder="Search here" class="text-xs">
+              <i class="fa-solid fa-magnifying-glass pt-1 pr-1 lg:pr-0 text-gray-500"></i>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------------
+       Slider section start  
+    ---------------------------------->
+
     <section class="relative">
       <div class="w-[350px] md:w-full mx-auto rounded-lg">
         <div class="carousel w-full ">
@@ -126,8 +153,8 @@
               </div>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide4" class="btn btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-circle">❯</a>
+              <a href="#slide4" class="btn btn-circle bg-zinc-900 hover:bg-black text-white">❮</a>
+              <a href="#slide2" class="btn btn-circle bg-zinc-900  hover:bg-black text-white">❯</a>
             </div>
           </div>
           <!-- second slider  -->
@@ -142,8 +169,8 @@
               </div>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide1" class="btn btn-circle">❮</a>
-              <a href="#slide3" class="btn btn-circle">❯</a>
+              <a href="#slide1" class="btn btn-circle  bg-zinc-900  hover:bg-black text-white">❮</a>
+              <a href="#slide3" class="btn btn-circle  bg-zinc-900  hover:bg-black text-white">❯</a>
             </div>
           </div>
           <!-- third slider  -->
@@ -158,8 +185,8 @@
               </div>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide4" class="btn btn-circle">❯</a>
+              <a href="#slide2" class="btn btn-circle  bg-zinc-900  hover:bg-black text-white">❮</a>
+              <a href="#slide4" class="btn btn-circle  bg-zinc-900  hover:bg-black text-white">❯</a>
             </div>
           </div>
           <!-- fourth slider  -->
@@ -174,8 +201,8 @@
               </div>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide3" class="btn btn-circle">❮</a>
-              <a href="#slide1" class="btn btn-circle">❯</a>
+              <a href="#slide3" class="btn btn-circle  bg-zinc-900  hover:bg-black text-white">❮</a>
+              <a href="#slide1" class="btn btn-circle  bg-zinc-900  hover:bg-black text-white">❯</a>
             </div>
           </div>
         </div>
@@ -671,7 +698,7 @@
           <div class="flex items-center flex-col md:flex-col lg:flex-row gap-3 py-8">
             <div class="relative">
               <!-- icon  -->
-              <div class="absolute top-3 lg:top-4 left-3 lg:left-4"><img src="./images/why6.svg" alt=""></div>
+              <div class="absolute top-3 lg:top-4 left-3 lg:left-4"><img src="./images/why5.svg" alt=""></div>
               <!-- ellipse  -->
               <div> <img src="./images/Ellipse 2.svg" class="w-12 lg:w-14" alt=""></div>
             </div>
@@ -689,7 +716,7 @@
           <div class="flex items-center flex-col md:flex-col lg:flex-row gap-3">
             <div class="relative">
               <!-- icon  -->
-              <div class="absolute top-3 lg:top-4 left-3 lg:left-4"><img src="./images/why6.svg" alt=""></div>
+              <div class="absolute top-3 lg:top-4 left-3 lg:left-4"><img src="./images/why4.svg" alt=""></div>
               <!-- ellipse  -->
               <div> <img src="./images/Ellipse 2.svg" class="w-12 lg:w-14" alt=""></div>
             </div>
