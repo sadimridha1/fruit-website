@@ -49,6 +49,10 @@
       width: 150px;
       /* margin-left: 14rem; */
     }
+
+    .countdown svg {
+      width: 50px;
+    }
   </style>
 </head>
 
@@ -106,22 +110,26 @@
           <img src="./images/logo.png" class="w-9" alt="">
           <h3 class="text-[25px] font-extrabold ml-2">Fruit Burst</h3>
         </div>
-  
+
         <div class="navbar-end">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost btn-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
             </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-[10px] z-[1] p-2 shadow bg-base-100 rounded-md w-36 -ml-[106px] ">
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-[10px] z-[1] p-2 shadow bg-base-100 rounded-md w-36 -ml-[106px] ">
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
               <li><a>Shop</a></li>
               <li><a>All Fruits</a></li>
               <div class="flex">
                 <input type="search" placeholder="Search" class="text-xs w-32 border-2 p-1 rounded-lg border-gray-300">
-              <div class="-ml-5 mt-1">
-                <i class="fa-solid fa-magnifying-glass pt-1 pr-1 lg:pr-0  text-gray-500"></i>
-              </div>
+                <div class="-ml-5 mt-1">
+                  <i class="fa-solid fa-magnifying-glass pt-1 pr-1 lg:pr-0  text-gray-500"></i>
+                </div>
               </div>
             </ul>
             <!-- <div
@@ -155,7 +163,7 @@
                 <h1 class="text-3xl lg:text-5xl text-white font-bold md:w-[600px]">Exotic tastes at your <br> doorstep
                 </h1>
                 <p class=" md:py-6 text-white py-2 md:w-[600px]">We supply highly quality organic products</p>
-                <button class="btn btn-primary md:ml-36">Get Started</button>
+                <button class="btn bg-[#F85559] border-none text-white font-extrabold md:ml-36 ">Shop Now</button>
               </div>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -163,6 +171,7 @@
               <a href="#slide2" class="btn btn-circle bg-zinc-900  hover:bg-black text-white">❯</a>
             </div>
           </div>
+
           <!-- second slider  -->
           <div id="slide2" class="carousel-item relative w-full  md:w-full">
             <img src="./images/banner2.png" class=" w-full h-56 md:h-auto brightness-50 rounded-lg" />
@@ -171,7 +180,7 @@
                 <h1 class="text-3xl lg:text-5xl text-white font-bold md:w-[600px]">Exotic tastes at your <br> doorstep
                 </h1>
                 <p class=" md:py-6 text-white py-2 md:w-[600px]">We supply highly quality organic products</p>
-                <button class="btn btn-primary md:ml-36">Get Started</button>
+               <button class="btn bg-[#F85559] border-none text-white font-extrabold md:ml-36 ">Shop Now</button>
               </div>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -179,6 +188,7 @@
               <a href="#slide3" class="btn btn-circle  bg-zinc-900  hover:bg-black text-white">❯</a>
             </div>
           </div>
+
           <!-- third slider  -->
           <div id="slide3" class="carousel-item relative w-full  md:w-full">
             <img src="./images/banner3.png" class=" w-full h-56 md:h-auto brightness-50 rounded-lg" />
@@ -187,7 +197,7 @@
                 <h1 class="text-3xl lg:text-5xl text-white font-bold md:w-[600px]">Exotic tastes at your <br> doorstep
                 </h1>
                 <p class=" md:py-6 text-white py-2 md:w-[600px]">We supply highly quality organic products</p>
-                <button class="btn btn-primary md:ml-36">Get Started</button>
+               <button class="btn bg-[#F85559] border-none text-white font-extrabold md:ml-36 ">Shop Now</button>
               </div>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -195,6 +205,7 @@
               <a href="#slide4" class="btn btn-circle  bg-zinc-900  hover:bg-black text-white">❯</a>
             </div>
           </div>
+
           <!-- fourth slider  -->
           <div id="slide4" class="carousel-item relative w-full  md:w-full">
             <img src="./images/banner4.png" class=" w-full h-56 md:h-auto brightness-50 rounded-lg" />
@@ -203,7 +214,7 @@
                 <h1 class="text-3xl lg:text-5xl text-white font-bold md:w-[600px]">Exotic tastes at your <br> doorstep
                 </h1>
                 <p class=" md:py-6 text-white py-2 md:w-[600px]">We supply highly quality organic products</p>
-                <button class="btn btn-primary md:ml-36">Get Started</button>
+                <button class="btn bg-[#F85559] border-none text-white font-extrabold md:ml-36 ">Shop Now</button>
               </div>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -213,7 +224,8 @@
           </div>
         </div>
       </div>
-      <!-- Fruit section  -->
+
+      <!-- Fruit section start -->
       <div class="hidden lg:block max-w-5xl mx-auto  bg-white drop-shadow-lg py-8 absolute top-[80%] left-32 px-10">
         <div class=" flex justify-evenly gap-20">
           <div>
@@ -675,10 +687,12 @@
         <div class="absolute top-11 left-16 max-w-7xl mx-auto ml-32">
           <div>
             <h3 class="text-5xl font-extrabold text-center text-white">Meet the team section</h3>
-            <p class="w-[390px] md:w-[615px] mx-auto pt-7 pb-7 text-white text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <p class="w-[390px] md:w-[615px] mx-auto pt-7 pb-7 text-white text-center">Contrary to popular belief, is
+              not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
+              2000 years old.</p>
           </div>
-           <!-- large device for card  -->
-           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
+          <!-- large device for card  -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
 
             <!-- first card  -->
             <div class="pb-4">
@@ -739,7 +753,7 @@
         </div>
       </div>
     </section>
-    
+
 
     <!-- Why Choose Us section start  -->
     <section class="my-16">
@@ -785,7 +799,7 @@
               <div> <img src="./images/Ellipse 2.svg" class="w-12 lg:w-14" alt=""></div>
             </div>
             <div class="text-center lg:text-left">
-              <h3 class="text-2xl font-extrabold pb-3">Dedicated Team </h3>
+              <h3 class="text-2xl font-extrabold pb-3">Fresh is Best </h3>
               <div class="border-b-[1px] border-slate-500 w-28 ml-24 lg:ml-0"></div>
               <!-- <hr class=" w-24 pb-2 divide-black">  -->
               <!-- <div class="w-24 h-6 text-gray-700"></div> -->
@@ -803,7 +817,7 @@
               <div> <img src="./images/Ellipse 2.svg" class="w-12 lg:w-14" alt=""></div>
             </div>
             <div class="text-center lg:text-left">
-              <h3 class="text-2xl font-extrabold pb-3">Dedicated Team </h3>
+              <h3 class="text-2xl font-extrabold pb-3">Gift Certificates </h3>
               <div class="border-b-[1px] border-slate-500 w-28 ml-24 lg:ml-0"></div>
               <!-- <hr class=" w-24 pb-2 divide-black">  -->
               <!-- <div class="w-24 h-6 text-gray-700"></div> -->
@@ -830,7 +844,7 @@
             </div>
 
             <div class="text-center lg:text-right">
-              <h3 class="text-2xl font-extrabold pb-3">Dedicated Team </h3>
+              <h3 class="text-2xl font-extrabold pb-3">Integrated Supplier </h3>
               <div class="border-b-[1px] border-slate-500 w-28 ml-24 lg:ml-52"></div>
               <!-- <hr class=" w-24 pb-2 divide-black">  -->
               <!-- <div class="w-24 h-6 text-gray-700"></div> -->
@@ -857,7 +871,7 @@
             </div>
 
             <div class="text-center lg:text-right">
-              <h3 class="text-2xl font-extrabold pb-3">Dedicated Team </h3>
+              <h3 class="text-2xl font-extrabold pb-3">Sustainable Practice </h3>
               <div class="border-b-[1px] border-slate-500 w-28 ml-24 lg:ml-52"></div>
               <!-- <hr class=" w-24 pb-2 divide-black">  -->
               <!-- <div class="w-24 h-6 text-gray-700"></div> -->
@@ -883,7 +897,7 @@
             </div>
 
             <div class="text-center lg:text-right">
-              <h3 class="text-2xl font-extrabold pb-3">Dedicated Team </h3>
+              <h3 class="text-2xl font-extrabold pb-3">The Benefits Only </h3>
               <div class="border-b-[1px] border-slate-500 w-28 ml-24 lg:ml-52"></div>
               <!-- <hr class=" w-24 pb-2 divide-black">  -->
               <!-- <div class="w-24 h-6 text-gray-700"></div> -->
@@ -906,14 +920,14 @@
   </main>
 
   <!-- Footer Section Start  -->
-  <footer class="w-full bg-footer-bg py-36">
+  <footer class="w-full bg-footer-bg py-24">
     <div>
       <div class="flex justify-center">
         <img src="./images/logo.png" alt="">
-        <h3 class="text-white text-[44px]">Fruit Burst</h3>
+        <h3 class="text-white text-[44px] ">Fruit Burst</h3>
       </div>
 
-      <div class="list-none text-white w-80 md:w-[600px] mx-auto py-11">
+      <div class="list-none text-white w-80 md:w-[600px] mx-auto py-11 -mt-4 md:-mt-4">
         <div class="flex gap-8 justify-center">
           <li>Home</li>
           <li>About Us</li>
@@ -925,13 +939,13 @@
           <li>My Account</li>
         </div>
       </div>
-      <div class="grid grid-cols-6 md:grid-cols-6 gap-3 w-64 lg:w-96 mx-auto">
-        <div><img src="./images/footer3.svg" class="w-7" alt=""></div>
-        <div><img src="./images/footer2.svg" class="w-7" alt=""></div>
-        <div> <img src="./images/footer5.svg" class="w-9" alt=""></div>
-        <div><img src="./images/footer6.svg" class="w-8" alt=""></div>
-        <div><img src="./images/instagram 1.svg" class="w-7" alt=""></div>
-        <div><img src="./images/apple 1.svg" class="w-7" alt=""></div>
+      <div class="grid grid-cols-6 md:grid-cols-6 gap-6 lg:gap-3 w-64 lg:w-96 mx-auto">
+        <div><img src="./images/footer3.svg" class="w-9 md:w-7" alt=""></div>
+        <div><img src="./images/footer2.svg" class="w-8 md:w-8" alt=""></div>
+        <div> <img src="./images/footer5.svg" class="w-9 md:w-9" alt=""></div>
+        <div><img src="./images/footer6.svg" class="w-8 md:w-8" alt=""></div>
+        <div><img src="./images/instagram 1.svg" class="w-7 md:w-7" alt=""></div>
+        <div><img src="./images/apple 1.svg" class="w-7 md:w-7" alt=""></div>
       </div>
     </div>
   </footer>
